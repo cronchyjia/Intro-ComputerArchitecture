@@ -347,8 +347,8 @@ encode_letter:
 	in ZH, SPH
 	ldd r21, Z+6
 
-	ldi ZL, LOW(PATTERNS)
-	ldi ZH, HIGH(PATTERNS)
+	ldi ZL, LOW(PATTERNS*2)
+	ldi ZH, HIGH(PATTERNS*2)
 
 letter_checker:
 	lpm r20, Z
